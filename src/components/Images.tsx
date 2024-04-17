@@ -1,4 +1,5 @@
 import { MouseEvent, useState } from 'react';
+import Counter from './Counter';
 
 const images = [
     {
@@ -70,10 +71,14 @@ export default function Images(){
                 <p>These low-profle sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole. they'll withstand everything the weather can over</p>
                 <div className="price-ctn">
                     <div>
-                        <h2>$125.00</h2><h3>50%</h3>
+                        <h2>$125.00</h2>
+                        <div className="price-discount">
+                            <h3>50%</h3>
+                        </div>
                     </div>
                     <h3 className="strike"><s>$250.00</s></h3>
                 </div>
+                <Counter />
             </div>
         </div>
     )
